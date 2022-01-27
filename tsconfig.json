@@ -11,7 +11,7 @@
     "moduleResolution": "node",
     "module": "commonjs",
     "pretty": true,
-    "sourceMap": false,
+    "sourceMap": true,
     "declaration": true,
     "outDir": "dist",
     "allowJs": true,
@@ -22,7 +22,6 @@
     "skipLibCheck": true,
     "baseUrl": "src",
     "paths": {
-      "@/*": ["*"],
       "@app": ["app.ts"],
       "@config/*": ["config/*"],
       "@interfaces/*": ["interfaces/*"],

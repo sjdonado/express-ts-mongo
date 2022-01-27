@@ -7,7 +7,7 @@ describe('Index routes', () => {
     const response = await request(App).get('/');
 
     expect(response.statusCode).toBe(404);
-    expect(response.body.data).toBeNull();
-    expect(response.body.error).toBe('Not found');
+    expect(response.body.records).toBeNull();
+    expect(response.body.msg).toBe('Not found');
   });
 });

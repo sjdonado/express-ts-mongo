@@ -9,4 +9,4 @@
 | Prefix Verb/header      | Authorization            | Path
 | :-----------------------| :------------------------| :-------------------
 | GET                     | PUBLIC                   | /v1/records/ping
-| POST                    | PUBLIC                   | /v1/records/
+| POST                    | PUBLIC                   | /v1/records/search
