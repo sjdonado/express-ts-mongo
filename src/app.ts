@@ -6,6 +6,8 @@ import ErrorSerializer from '@serializers/Error';
 import { stream } from '@utils/logger';
 import MongoDB from '@services/mongodb';
 
+import recordsRouter from '@routes/records';
+
 const app = express();
 
 MongoDB.connect();
@@ -13,6 +15,8 @@ MongoDB.connect();
 app.use(morgan('tiny', { stream }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+app.use('/v1/records', recordsRouter);
 
 app.use((req: Request, res: Response, next: NextFunction) => {
   const code = 404;

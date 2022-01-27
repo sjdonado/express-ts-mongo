@@ -14,7 +14,7 @@ class BaseSerializer {
   toJSON() {
     return {
       code: this.code,
-      msg: this.msg,
+      msg: this.code === 0 ? 'success' : this.msg,
       records: this.records,
     };
   }
